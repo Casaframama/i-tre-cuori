@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>I Tre Cuori - Vacanza ad Alba</title>
+  <meta name="description" content="I Tre Cuori: accogliente alloggio ad Alba nelle Langhe. 3 camere, fino a 6 ospiti, cucina, salone e parcheggio. Prenota la tua vacanza relax!">
+  <meta name="keywords" content="casa vacanza, Langhe, Airbnb, Alba, alloggio, turistico">
+  <meta property="og:title" content="I Tre Cuori - Vacanza ad Alba">
+  <meta property="og:description" content="Un posto dove puoi sentirti a casa nelle colline delle Langhe">
+  <meta property="og:image" content="./img/1.jpg">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="top-controls">
+    <button id="langToggle" class="lang-toggle"><i class="nf nf-md-translate"></i> <span>IT</span></button>
+    <button id="darkModeToggle" class="theme-toggle"><i class="nf nf-md-moon_waning_crescent"></i></button>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-carousel">
+      <div class="hero-carousel-inner">
+        <img src="./1.jpeg" alt="Facciata I Tre Cuori" class="hero-image">
+        <img src="./2.jpeg" alt="Interno I Tre Cuori" class="hero-image">
+        <img src="./3.JPG" alt="Salotto" class="hero-image">
+        <img src="./4.JPG" alt="Cucina" class="hero-image">
+        <img src="./5.JPG" alt="Bagno" class="hero-image">
+        <img src="./6.JPG" alt="Camera" class="hero-image">
+        <img src="./7.JPG" alt="Dettaglio" class="hero-image">
+        <img src="./8.JPG" alt="Esterno" class="hero-image">
+        <img src="./9.JPG" alt="Camera" class="hero-image">
+        <img src="./10.JPG" alt="Dettaglio" class="hero-image">
+        <img src="./11.JPG" alt="Interno" class="hero-image">
+        <img src="./12.JPG" alt="Dettaglio" class="hero-image">
+        <img src="./13.JPG" alt="Esterno" class="hero-image">
+        <img src="./14.JPG" alt="Interno" class="hero-image">
+      </div>
+      <button class="hero-carousel-prev" id="heroPrev"><i class="nf nf-md-chevron_left"></i></button>
+      <button class="hero-carousel-next" id="heroNext"><i class="nf nf-md-chevron_right"></i></button>
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1 data-i18n="hero-title">I Tre Cuori</h1>
+      <p class="subtitle" data-i18n="hero-subtitle">Un posto dove puoi sentirti a casa</p>
+      <div class="cta-dropdown" id="ctaDropdown">
+        <button class="cta-button" id="ctaButton" data-i18n="book-btn">Prenota la tua vacanza <i class="nf nf-md-chevron_down"></i></button>
+        <div class="cta-dropdown-menu">
+          <a href="https://www.airbnb.it/rooms/1370438530907844204" target="_blank">
+            <img src="./img/airbnb.png" alt="Airbnb"> <span data-i18n="book-airbnb">Prenota su Airbnb</span>
+          </a>
+          <a href="https://www.booking.com/hotel/it/i-tre-cuori-alba.it.html" target="_blank">
+            <img src="./img/booking.png" alt="Booking"> <span data-i18n="book-booking">Prenota su Booking</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Servizi -->
+  <section class="servizi">
+    <div class="container">
+      <h2 class="section-title" data-i18n="services-title">I Nostri Servizi</h2>
+      <div class="servizi-grid">
+        <div class="servizio-item">
+          <i class="nf nf-md-wifi"></i>
+          <h3 data-i18n="service-wifi">WiFi</h3>
+        </div>
+        <div class="servizio-item">
+          <i class="nf nf-md-car"></i>
+          <h3 data-i18n="service-parking">Parcheggio</h3>
+        </div>
+        <div class="servizio-item">
+          <i class="nf nf-md-snowflake"></i>
+          <h3 data-i18n="service-ac">Aria Condizionata</h3>
+        </div>
+        <div class="servizio-item">
+          <i class="nf nf-md-silverware_fork_knife"></i>
+          <h3 data-i18n="service-kitchen">Cucina Attrezzata</h3>
+        </div>
+        <div class="servizio-item">
+          <i class="nf nf-md-television"></i>
+          <h3>TV</h3>
+        </div>
+        <div class="servizio-item">
+          <i class="nf nf-md-tree"></i>
+          <h3 data-i18n="service-garden">Giardino</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Galleria -->
+  <section class="galleria">
+    <div class="container">
+      <h2 class="section-title" data-i18n="gallery-title">La Nostra Casa</h2>
+      <div class="galleria-grid">
+        <img src="./1.jpeg" alt="Facciata" onclick="openLightbox(this.src)">
+        <img src="./2.jpeg" alt="Interno" onclick="openLightbox(this.src)">
+        <img src="./3.JPG" alt="Salotto" onclick="openLightbox(this.src)">
+        <img src="./4.JPG" alt="Cucina" onclick="openLightbox(this.src)">
+        <img src="./5.JPG" alt="Bagno" onclick="openLightbox(this.src)">
+        <img src="./6.JPG" alt="Camera" onclick="openLightbox(this.src)">
+        <img src="./7.JPG" alt="Dettaglio" onclick="openLightbox(this.src)">
+        <img src="./8.JPG" alt="Esterno" onclick="openLightbox(this.src)">
+        <img src="./9.JPG" alt="Camera" onclick="openLightbox(this.src)">
+        <img src="./10.JPG" alt="Dettaglio" onclick="openLightbox(this.src)">
+        <img src="./11.JPG" alt="Interno" onclick="openLightbox(this.src)">
+        <img src="./12.JPG" alt="Dettaglio" onclick="openLightbox(this.src)">
+        <img src="./13.JPG" alt="Esterno" onclick="openLightbox(this.src)">
+        <img src="./14.JPG" alt="Interno" onclick="openLightbox(this.src)">
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+    <span class="lightbox-close">&times;</span>
+    <img id="lightbox-img" src="" alt="Galleria">
+  </div>
+
+  <!-- Descrizione -->
+  <section class="descrizione">
+    <div class="container">
+      <h2 class="section-title" data-i18n="welcome-title">Benvenuti a Casa Nostra</h2>
+      <div class="descrizione-content">
+        <p data-i18n="desc1">Benvenuti a <span class="highlight">I Tre Cuori</span>, un incantevole monolocale situato nel cuore di Alba, a pochi passi dal centro. Circondati dalle colline morbide del Roero, potrete immergervi in una delle zone più affascinanti del Piemonte.</p>
+        <p data-i18n="desc2">A pochi passi da Alba, città famosa in tutto il mondo per i suoi tartufi e il Barolo, la nostra struttura rappresenta <span class="highlight">la base perfetta</span> per esplorare castelli, vigneti e borghi medievali, concedendovi al contempo la serenità di un soggiorno urbano.</p>
+        <p data-i18n="desc3">Il nostro monolocale può ospitare fino a <span class="highlight">4 ospiti</span> e dispone di:</p>
+        <ul class="features-list" data-i18n="desc4">
+          <li>1 letto matrimoniale</li>
+          <li>1 divano letto</li>
+          <li>Bagno privato</li>
+          <li>Cucina completamente attrezzata</li>
+          <li>Aria condizionata</li>
+          <li>WiFi</li>
+        </ul>
+        <p data-i18n="desc5">L'appartamento si trova al <span class="highlight">primo piano</span> con parcheggio condominiale disponibile per gli ospiti.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Posizione -->
+  <section class="posizione">
+    <div class="container">
+      <h2 class="section-title" data-i18n="location-title">Dove Siamo</h2>
+      <div class="posizione-grid">
+        <div class="posizione-info">
+          <h3 data-i18n="location-city">Alba</h3>
+          <p><i class="nf nf-md-map_marker"></i> Via Fratelli Ambrogio, 25</p>
+          <p>12051 Alba (CN)</p>
+          <p><i class="nf nf-md-information"></i> <span data-i18n="location-region">Piemonte, Langhe e Roero</span></p>
+          <p><i class="nf nf-md-wine"></i> <span data-i18n="location-near">Alba, città del tartufo e del Barolo</span></p>
+        </div>
+        <div class="posizione-map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2797.123456789!2d8.0281736!3d44.6965429!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDTCsDQxJzQ2LjIiTiA4wrAwMScxNS4wIkU!5e0!3m2!1sit!2sit!4v1700000000000!5m2!1sit!2sit" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contatti -->
+  <section class="contatti">
+    <div class="container">
+      <h2 class="section-title" data-i18n="contacts-title">Contatti</h2>
+      <div class="contatti-grid">
+        <div class="contatto-item">
+          <i class="nf nf-md-account_circle"></i>
+          <h3>Leonardo</h3>
+          <a href="tel:3397225062">339 7225062</a>
+        </div>
+        <div class="contatto-item">
+          <i class="nf nf-md-account_circle"></i>
+          <h3>Daniela</h3>
+          <a href="tel:3381778553">338 1778553</a>
+        </div>
+        <div class="contatto-item">
+          <i class="nf nf-cod-mail"></i>
+          <h3>Email</h3>
+          <a href="mailto:casaframama@gmail.com">casaframama@gmail.com</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p data-i18n="footer-brand">I Tre Cuori - Vacanze nelle Langhe</p>
+    <p data-i18n="footer-cf">Codice Fiscale: CRCLRD81L18A124A</p>
+    <p class="cin"><strong data-i18n="footer-cin">CIN: IT004003C26CO6QC5P</strong></p>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
